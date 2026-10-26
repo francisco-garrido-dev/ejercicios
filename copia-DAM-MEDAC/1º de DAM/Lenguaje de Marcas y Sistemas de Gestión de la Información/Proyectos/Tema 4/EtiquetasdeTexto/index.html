@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas Texto</title>
+    <style>
+        #texto {
+            color: red
+                /*Esto está hecho en CSS*/
+        }
+
+        #esto {
+            color: green
+        }
+    </style>
+</head>
+
+<body>
+    <!--Salto de línea-->
+    <p>Ejemplo de <br> salto de línea</p>
+
+    <hr>
+
+    <!--Etiqueta comodín-->
+
+    <p>La palabra <span id="texto">texto</span> tiene color rojo</p>
+
+    <hr>
+
+    <!--Enfásis: SEMÁNTICO-->
+    <p>Quiero enfatizar que estamos en <em>Málaga</em></p>
+    <p>Es muy importante que leas <span id="esto"><strong>ESTO</strong></span></p>
+
+    <hr>
+
+    <!--Subíndice-->
+    <p>La fórmula del agua es H<sub>2</sub>O</p>
+    <!--Superíndice-->
+    <p>El cuadrado de X es X<sup>2</sup></p>
+
+    <hr>
+    <!--Cursiva-->
+    <p>Esta <i>palabra</i> está en cursiva.</p>
+
+    <!--Tachar-->
+    <p><s>Esto lo quiero tachar</s></p>
+
+    <!--Comentario / Información secundaria-->
+    <p>Camiseta roja <bold>100% algodón</bold> y el precio es <small>20€</small></p>
+
+    <!--Resaltar-->
+    <p>Esta camiseta es <mark>amarilla</mark></p>
+
+    <!--Subrayado-->
+    <p>Esta <u>palabra</u> está subrayada.</s></p>
+
+    <!--Referencias a títulos de obras-->
+    <p>Cervantes escribió <cite>El Quijote</cite>, una obra maestra.</p>
+
+    <!--Citas textuales cortas-->
+    <p>Ya sabes el refrán, <q>bicho malo nunca muere</q>.</p>
+
+    <!--Abreviatura-->
+
+    <p>El <abbr title="Hypertext Markup Language">HTML</abbr> para crear páginas web</p>
+
+    <!--Definición-->
+
+    <p>El término <dfn title="se refiere a la protección de sistemas informáticos">ciberseguridad</dfn> se utiliza mucho
+        hoy en día.</p>
+        
+        <!--Texto eliminado e insertado-->
+        <p>
+            El documento ha sido actualizado: <del>Versión antigua</del> <ins>Versión nueva</ins> y tiene el siguiente código.
+        </p>
+
+        <!--Código-->
+        <p> Para imprimir por pantalla "Hola Mundo" en Java usamos este código:</p>
+        <code>System.out.println("Hola mundo");</code>
+
+        <!--Entrada de teclado-->
+        <p>Para guardar el archivo presiona <kbd>CTRL + S</kbd> y para listar los archivos de un directorio
+        usa el comando <code>ls</code>.</p>
+
+        
+</body>
+
+</html>

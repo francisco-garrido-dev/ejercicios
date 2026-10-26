@@ -1,0 +1,52 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+
+# NetBeans (configuración local y compilación)
+**/nbproject/private/
+**/private.properties
+**/private.xml
+**/build/
+**/dist/
+
+
+# Archivos temporales y copias de seguridad
+*~
+*.bak
+*.bkp
+*.tmp
+*.swp
+*.swo
+*.orig
+*.rej
+.~*
+.~lock.*
+\#*\#
+
+
+# Variables dei sistema y basurilla de MEGAsync
+.DS_Store
+Thumbs.db
+Desktop.ini
+**/.directory
+**/.debris/
+**/.megaignore
+
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Archivos temporales de LibreOffice o Microsoft
+~$*
+
+/copia-DAM-MEDAC/1º de DAM/Entornos de Desarrollo/Información general de la asignatura y del curso.odt
+/copia-DAM-MEDAC/1º de DAM/Programación/TEMARIO COMPLETO/
+/copia-DAM-MEDAC/1º de DAM/Lenguaje de Marcas y Sistemas de Gestión de la Información/TEMARIO COMPLETO/
+/copia-DAM-MEDAC/1º de DAM/Bases de Datos/TEMARIO COMPLETO/
+/copia-DAM-MEDAC/1º de DAM/Entornos de Desarrollo/TEMARIO COMPLETO/
+/copia-DAM-MEDAC/1º de DAM/Sistemas Informáticos/TEMARIO COMPLETO/

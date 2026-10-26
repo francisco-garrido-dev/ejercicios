@@ -1,0 +1,75 @@
+Prohibido la clase String. Vamos a hacer el juego del ahorcado. Se introducen las letras, una a una, de la palabra que va a ser la correcta. El usuario
+dice la palabra y guardamos los caracteres. 5 turnos máximos, hay que adivinar las letras que hay; las que quedan, muestran como guiones bajos. Si no se averigua la palabra en 5 intentos,
+se pierde, de lo contrario, se gana.
+
+fjavier.ortega@davante.es
+
+Scanner sc = new Scanner (System.in);
+
+char letra;
+int intentos = 0;
+boolean encontrada = false;
+
+System.out.println("Introduce palabra: ");
+
+int longitud = sc.nextInt();
+char [] guiones = new guiones[longitud];
+
+char [] palabra = new palabra[longitud];
+
+for (int i = 0; i< guiones.length; i++) { //Se define el número máximo de guiones.
+guiones [i] = '_';
+
+}
+
+
+
+for (int i = 0; i < palabra.length; i++) { //Se ha escrito la palabra.
+System.out.print("Introduce posicion" + (i + 1));
+palabra[i] = sc.next().charAt(0);
+
+}
+
+
+do {
+System.out.print("Adivina la palabra: ");
+
+for (int i = 0; i < palabra.length; i++) { //Se imprimen los guiones
+System.out.print(guiones[i] + " ");
+
+}
+
+System.out.print("Introduce una letra: ");
+letra = sc.next().charAt(0);
+
+
+for (int i = 0; i < palabra.length; i++) {
+
+if (letra == palabra[i]) { //Sustituye cada guion por una nueva letra.
+guiones[i] = letra;
+
+} else {
+System.out.print("Has fallado. Tienes un intento menos.");
+intentos++;
+
+}
+
+}
+
+
+
+
+
+
+
+} while (intentos != 5 && Array.equals(palabra, guiones));
+
+
+
+if (intentos == 5) {
+System.out.println("Pierdes");
+} else {
+System.out.println("Ganas");
+}
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+
+<body>
+    <!--Listas ordenadas-->
+    <h2>Listas ordenadas</h2>
+    <ol type="I" start="5">
+        <li>Análisis </li>
+        <li>Diseño </li>
+        <li>Implementación </li>
+
+    </ol>
+
+    <!--Listas no ordenadas-->
+
+    <h2>Listas NO ordenadas</h2>
+    <ul type="square">
+        <li>Análisis </li>
+        <li>Diseño </li>
+        <li>Implementación </li>
+
+    </ul>
+
+    <!--Listas de definición-->
+    <h2>Listas de definición</h2>
+    <dl>
+        <dt><b>Linux</b></dt>
+        <dd><mark>Es un kernel</mark>, no un sistema operativo.</dd>
+
+        <dt><b>Windows</b></dt>
+        <dd>Es un sistema operativo <u>de dudosa calidad</u>.</dd>
+
+        <dt><b>MacOS</b></dt>
+        <dd>Es un sistema operativo con ligeros toques de <em>UNIX</em>.</dd>
+
+
+
+
+    </dl>
+
+    <h1>Prioridades de la semana</h1>
+    <ol>
+        <li>Terminar el proyecto de programación</li>
+        <li>Preparar el examen de base de datos</li>
+        <li>Organizar el material de estudio</li>
+
+
+    </ol>
+
+    <h2>Tareas relacionadas:</h2>
+
+    <ul>
+        <li>Revisar el código y corregir errores.</li>
+        <li>Hacer un resumen de los temas del examen.</li>
+        <li>Organizar los apuntes en carpetas separadas.</li>
+
+    </ul>
+
+    <h1>Direcciones de Internet</h1>
+
+    <ul>
+        <li><a target=_blank href=https://www.google.com />Google</a></li>
+        <!--target = _self para abrir en la misma pestaña-->
+        <li><a target=_blank href=https://es.wikipedia.org />Wikipedia</a></li>
+        <li><a target=_blank href=https://www.w3schools.com />W3School</a></li>
+    </ul>
+
+    <!--Listas encadenadas/anidadas-->
+
+    <ol>
+        <li>Análisis
+            <ol> <!--Se crea la lista ordenada anidada dentro de Análisis-->
+                <li>Reunión</li>
+                <li>Toma de decisiones</li>
+            </ol>
+        </li> <!--Esta etiqueta no se cierra hasta que se metan los elementos encadenados dentro-->
+
+        <li>Implementación
+            <ul>
+                <li>Arquitectura</li> <!--El navegador considera que es segundo nivel y lo pinta con círculos vacíos
+                                      en lugar de rellenos-->
+                <li>Bases de datos</li>
+
+            </ul>
+
+
+        </li>
+
+
+
+    </ol>
+
+
+</body>
+
+</html>
